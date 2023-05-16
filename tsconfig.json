@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "outDir": "./build",
+    "baseUrl": "./src/",
+    "paths": {
+      "@models/*": [
+        "infra/database/orm_name/models/*"
+      ],
+      "@http/*": [
+        "infra/http/*"
+      ],
+      "@modules/*": [
+        "app/modules/*"
+      ],
+      "@interfaces/*": [
+        "app/interfaces/*"
+      ],
+      "@repositories/*": [
+        "infra/database/orm_name/repositories/*"
+      ],
+      "@config/*": [
+        "config/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ],
+      "@container/*": [
+        "container/*"
+      ],
+      "@middlewares/*": [
+        "middlewares/*"
+      ],
+      "@database/*": [
+        "infra/database/orm_name/*"
+      ]
+    },
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
+  },
+}

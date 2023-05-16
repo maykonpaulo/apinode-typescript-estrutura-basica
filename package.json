@@ -1,0 +1,27 @@
+{
+  "name": "app_node_estrutura_basica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "license": "MIT",
+  "scripts": {
+    "add:deps": "npm install bcryptjs cors dayjs dotenv express express-async-errors nodemailer jsonwebtoken module-alias reflect-metadata tsyringe",
+    "add:devdeps": "npm install tsx @types/bcryptjs @types/cors @types/express @types/nodemailer @types/jsonwebtoken @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-airbnb-base eslint-import-resolver-typescript eslint-plugin-import eslint-plugin-import-helpers typescript -D",
+    "del:deps": "npm uninstall bcryptjs cors dayjs dotenv express express-async-errors nodemailer jsonwebtoken module-alias reflect-metadata tsyringe",
+    "del:devdeps": "npm uninstall tsx @types/bcryptjs @types/cors @types/express @types/nodemailer @types/jsonwebtoken @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-airbnb-base eslint-import-resolver-typescript eslint-plugin-import eslint-plugin-import-helpers typescript -D",
+    "dev": "tsx watch src/app.ts",
+    "build": "tsc"
+  },
+  "_moduleAliases": {
+    "@http": "src/infra/http",
+    "@models": "src/infra/database/orm_name/models",
+    "@modules": "src/app/modules",
+    "@interfaces": "src/app/interfaces",
+    "@repositories": "src/infra/database/orm_name/repositories",
+    "@config": "src/config",
+    "@utils": "src/utils",
+    "@container": "src/container",
+    "@middlewares": "src/middlewares",
+    "@database": "src/infra/database/orm_name"
+  }
+}
