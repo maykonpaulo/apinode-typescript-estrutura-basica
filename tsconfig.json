@@ -6,7 +6,7 @@
     "baseUrl": "./src/",
     "paths": {
       "@models/*": [
-        "infra/database/orm_name/models/*"
+        "infra/database/{orm_name}/models/*"
       ],
       "@http/*": [
         "infra/http/*"
@@ -18,7 +18,7 @@
         "app/interfaces/*"
       ],
       "@repositories/*": [
-        "infra/database/orm_name/repositories/*"
+        "infra/database/{orm_name}/repositories/*"
       ],
       "@config/*": [
         "config/*"
@@ -33,7 +33,7 @@
         "middlewares/*"
       ],
       "@database/*": [
-        "infra/database/orm_name/*"
+        "infra/database/{orm_name}/*"
       ]
     },
     "esModuleInterop": true,

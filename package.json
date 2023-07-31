@@ -1,5 +1,5 @@
 {
-  "name": "app_node_estrutura_basica",
+  "name": "ts-node-project-base",
   "version": "1.0.0",
   "description": "",
   "main": "src/app.js",
@@ -14,14 +14,14 @@
   },
   "_moduleAliases": {
     "@http": "src/infra/http",
-    "@models": "src/infra/database/orm_name/models",
+    "@models": "src/infra/database/{orm_name}/models",
     "@modules": "src/app/modules",
     "@interfaces": "src/app/interfaces",
-    "@repositories": "src/infra/database/orm_name/repositories",
+    "@repositories": "src/infra/database/{orm_name}/repositories",
     "@config": "src/config",
     "@utils": "src/utils",
     "@container": "src/container",
     "@middlewares": "src/middlewares",
-    "@database": "src/infra/database/orm_name"
+    "@database": "src/infra/database/{orm_name}"
   }
 }
